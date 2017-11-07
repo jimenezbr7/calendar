@@ -1,0 +1,26 @@
+h5{
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+#month_section {
+  width: 100%;
+  text-align: center;
+  background-color: firebrick;
+  height: 100px;
+  color: white;
+  line-height: 100px;
+}
+
+#previous_month, #next_month, #october, #november, #december{
+  float: left;
+  width: 250px;
+}
+
+#weekday_section{
+  clear: both;
+}
