@@ -1,3 +1,12 @@
+body{
+  font-size: 25px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+}
+
 h5{
   text-align: center;
 }
@@ -23,4 +32,41 @@ ul {
 
 #weekday_section{
   clear: both;
+  padding: 20px 0px;
+  background-color: #A27E8E;
+}
+
+#weekdays{
+  margin: 0;
+  padding: 10px 0;
+  background-color: #A27E8E;
+}
+
+
+#weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: black;
+  text-align: center;
+}
+
+.days_section{
+  padding: 20px 0px;
+  background-color: #A2A79E;
+}
+
+.days {
+    padding: 10px 0px;
+    background-color: #A2A79E;
+    margin: 0;
+    line-height: 25px;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
 }
