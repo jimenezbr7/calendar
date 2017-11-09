@@ -10,7 +10,9 @@
       <h5> Brian's Calendar </h5>
     </header>
 
-    <div id="small_calendar">
+    <div id="wrapper">
+
+    <div id="calendar_view">
 
       <div id="month_section">
         <div id="previous_month"> < </div>
@@ -27,8 +29,8 @@
           <li id="Tuesday">Tu</li>
           <li id="Wednesday">We</li>
           <li id="Thursday">Th</li>
-          <li id="Wednesday">Fr</li>
-          <li id="Friday">Sa</li>
+          <li id="Friday">Fr</li>
+          <li id="Saturday">Sa</li>
         </ul>
       </div>
 
@@ -85,8 +87,8 @@
           <li>10</li>
           <li>11</li>
           <li>12</li>
-          <li>13</li>
-          <li>14</li>
+          <li id="nov13">13</li>
+          <li id="nov14">14</li>
           <li>15</li>
           <li>16</li>
           <li>17</li>
@@ -146,8 +148,20 @@
           <li>31</li>
         </ul>
       </div>
-
     </div>
+
+    <div id="daily_view">
+      <div id="nov13daily">
+        <span> 9am - 530pm: work</span>
+        <span> 630pm - 930pm: final presentations @ NYCDA </span>
+      </div>
+      <div id="nov14daily">
+        <span> 9am - 530pm: work </span>
+        <span> 7pm - 10pm: Hamilton with Andy </span>
+        <span> TO DO: stop by the Strand to buy Ben Schwartz' new book<span>
+      </div>
+    </div>
+  </div>
 
     <script src="jquery-3.2.1.min.js"> </script>
     <script src="app.js"> </script>

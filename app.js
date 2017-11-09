@@ -56,11 +56,38 @@ function goToNextMonth() {
     $("#october").removeClass("active");
     $("#november").addClass("active");
     $("#oct_days_section").hide();
-    $("#nov_days_section").show(); 
+    $("#nov_days_section").show();
   }
 };
 
+function openNov13() {
+  $("#wrapper").css("width", "1100px");
+  $("#wrapper").css("margin", "0 auto");
+  $("#calendar_view").css("width", "50%");
+  $("#daily_view").css("width", "50%");
+  $("#calendar_view").css("float", "left");
+  $("#daily_view").css("float", "left");
+  $("#nov13daily").show();
+  $("#nov14daily").hide();
+  $("#nov13").css("color", "firebrick");
+  $("#nov14").css("color", "white");
 
-document.getElementById("previous_month").addEventListener("click",goToPriorMonth);
+}
 
-document.getElementById("next_month").addEventListener("click",goToNextMonth);
+function openNov14() {
+  $("#wrapper").css("width", "1100px");
+  $("#wrapper").css("margin", "0 auto");
+  $("#calendar_view").css("width", "50%");
+  $("#daily_view").css("width", "50%");
+  $("#calendar_view").css("float", "left");
+  $("#daily_view").css("float", "left");
+  $("#nov14daily").show();
+  $("#nov13daily").hide();
+  $("#nov14").css("color", "firebrick");
+  $("#nov13").css("color", "white");
+}
+
+$("#previous_month").click(goToPriorMonth);
+$("#next_month").click(goToNextMonth);
+$("#nov13").click(openNov13);
+$("#nov14").click(openNov14);
