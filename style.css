@@ -116,3 +116,9 @@ ul {
   display: block;
   padding: 5px;
 }
+
+@media all and (max-width: 490px) {
+  body {
+    font-size: 22px;
+  }
+}
