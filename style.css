@@ -50,8 +50,8 @@ ul {
 }
 
 #weekdays{
-  padding: 10px 0px;
   background-color: #A27E8E;
+  padding: 10px 0px;
 }
 
 
@@ -101,9 +101,10 @@ ul {
   float: right;
 }
 
-#nov13daily, #nov14daily{
+#nov13daily, #nov14daily, #nov15daily{
   display: none;
-  text-align: center;
+  padding-top: 150px;
+  padding-left: 75px;
 }
 
 #nov13daily span{
@@ -112,6 +113,11 @@ ul {
 }
 
 #nov14daily span{
+  display: block;
+  padding: 5px;
+}
+
+#nov15daily span{
   display: block;
   padding: 5px;
 }
