@@ -78,8 +78,7 @@ function openNov13() {
   $("#nov13").css("color", "firebrick");
   $("#nov14").css("color", "white");
   $("#nov15").css("color", "white");
-
-}
+};
 
 function openNov14() {
   $("#wrapper").css("width", "1100px");
@@ -98,7 +97,7 @@ function openNov14() {
   $("#nov15daily").hide();
   $("#nov14").css("color", "firebrick");
   $("#nov13").css("color", "white");    $("#nov15").css("color", "white");
-}
+};
 
 function openNov15() {
   $("#wrapper").css("width", "1100px");
@@ -117,11 +116,28 @@ function openNov15() {
   $("#nov13daily").hide();
   $("#nov15").css("color", "firebrick");
   $("#nov13").css("color", "white");  $("#nov14").css("color", "white");
+};
 
+function resetTheCalendar() {
+  $("#wrapper").css("width", "100%");
+  $("#calendar_view").css("width", "100%");
+  $("#daily_view").css("width", "0%");
+  $("#calendar_view").css("font-size", "25px");
+  $("#month_section").css("height", "140px")
+  $("#month_section").css("line-height", "140px")
+  $("#calendar_view").css("border", "none");
+  $("#nov13daily").hide();
+  $("#nov14daily").hide();
+  $("#nov15daily").hide();
+  $("#nov13").css("color", "white");
+  $("#nov14").css("color", "white");
+  $("#nov15").css("color", "white");
 }
+
 
 $("#previous_month").click(goToPriorMonth);
 $("#next_month").click(goToNextMonth);
 $("#nov13").click(openNov13);
 $("#nov14").click(openNov14);
 $("#nov15").click(openNov15);
+$("#reset").click(resetTheCalendar);
