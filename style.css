@@ -83,6 +83,10 @@ ul {
   color: darkblue;
 }
 
+.class:hover {
+  color: darkblue;
+}
+
 #october, #december{
   display: none;
 }
@@ -119,6 +123,6 @@ ul {
 
 @media all and (max-width: 490px) {
   body {
-    font-size: 22px;
+    font-size: 20px;
   }
 }

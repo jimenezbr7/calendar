@@ -29,6 +29,8 @@ function goToPriorMonth() {
   }
 };
 
+
+
 function goToNextMonth() {
   var whatMonthIsIt = $("#month_section").find(".active").attr("id");
 
@@ -59,6 +61,9 @@ function goToNextMonth() {
     $("#nov_days_section").show();
   }
 };
+
+
+
 
 function openNov13() {
   $("#wrapper").css("width", "1100px");
@@ -117,6 +122,9 @@ function openNov15() {
   $("#nov15").css("color", "firebrick");
   $("#nov13").css("color", "white");  $("#nov14").css("color", "white");
 };
+
+
+
 
 function resetTheCalendar() {
   $("#wrapper").css("width", "100%");
